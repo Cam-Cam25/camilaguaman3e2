@@ -1,4 +1,4 @@
-<button (click)="alternateVisibility()"></button>
+<button (click)="alternateVisibility()" [style.display]="visibleMenu == false ? 'flex':'none'"></button>
 <div class="sidemenu-container" [style.background-color]="theme" [style.width]="widthMenu + '%'"
     [style.display]="visibleMenu == true ? 'flex':'none'">
     <div class="item">
@@ -16,7 +16,7 @@
     </div>
 
     <div class="item">
-        <button class="btn" (click)="setTheme('red')" (click1)="setTheme('blue')">Change Color</button>
+        <button class="btn" (click)="setTheme('blue')">Change Color</button>
         <button class="btn" (click)="sentSize()">Change Size</button>
     </div>
 </div>

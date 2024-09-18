@@ -13,10 +13,13 @@ export class SideMenuComponent {
    widthMenu: number= 50;
    visibleMenu: boolean= true;
    visibleMenu1: boolean= true;
+   
    alternateVisibility():void{//alterna la visibilidad del menu
     this.visibleMenu=!this.visibleMenu;
    }
-
+   alternateVisibility1():void{//alterna la visibilidad del menu
+    this.visibleMenu1=!this.visibleMenu1;
+   }
     initialTheme: string = "";
    setTheme(color:string):void{ //Cambia el color del menu
     if (this.theme === color) {
