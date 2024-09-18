@@ -1,0 +1,22 @@
+<button (click)="alternateVisibility()"></button>
+<div class="sidemenu-container" [style.background-color]="theme" [style.width]="widthMenu + '%'"
+    [style.display]="visibleMenu == true ? 'flex':'none'">
+    <div class="item">
+        <img class="img1" src="https://lens-storage.storage.googleapis.com/png/bb9c8f998d12467db394b3db169ef26b" alt="image.png">
+        <p>{{userName}}</p>
+        <!-- interpolation de dato activada -->
+        <button class="img" (click)="alternateVisibility()"><img src="./left-arrow (3).svg" alt="image.svg" ></button> 
+    </div>
+
+    <div class="item">
+        <p><span>🗓️</span> Dashboard</p>
+    </div>
+    <div class="item">
+        <p><span>🧑</span>Profile</p>
+    </div>
+
+    <div class="item">
+        <button class="btn" (click)="setTheme('red')" (click1)="setTheme('blue')">Change Color</button>
+        <button class="btn" (click)="sentSize()">Change Size</button>
+    </div>
+</div>

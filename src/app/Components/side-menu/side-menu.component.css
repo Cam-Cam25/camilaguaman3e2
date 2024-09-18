@@ -1,0 +1,61 @@
+.sidemenu-container{
+    width:50%;
+    height: 100vh;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px; /*Espacio entre elementos*/
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:20px;
+    margin-left: 20px;
+}
+.item p{
+    width: 50px;
+    text-wrap: wrap;
+    display: flex;
+    gap:10px;
+    font-size: 20px;
+}
+.img1{
+    width: 80px;
+    height: 80px;
+    border-radius: 80%;
+}
+.img{
+    border: none;
+    background-color: transparent;
+    color:transparent;
+
+}
+.btn{
+    width: 100%;              /* Ancho completo del contenedor */
+    padding: 20px;            /* Espacio interno para el texto del botón */
+    background-color: hsl(32, 59%, 82%); /* Color de fondo inicial del botón */
+    border-bottom:4px solid hsl(32, 63%, 61%);
+    border-right: 4px solid hsl(32, 63%, 61%);
+    border: none;             /* Sin borde */
+    border-radius: 5px;       /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para el botón */
+    font-size: 16px;          /* Tamaño de fuente */
+    font-weight: bold;        /* Fuente en negrita */
+    cursor: pointer;          /* Cambia el cursor al pasar por encima */
+    transition: all 0.3s ease; /* Transición suave para los cambios */
+}
+
+.btn:hover {
+    background-color: hsl(182, 44%, 83%); /* Cambio de color de fondo al pasar el ratón */
+    border-bottom:4px solid hsl(183, 37%, 42%);
+    border-right: 4px solid hsl(183, 37%, 42%);
+    transform: translateY(-2px); /* Desplazamiento ligero al pasar el ratón */
+    .lista-elementos {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+}
